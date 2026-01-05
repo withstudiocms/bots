@@ -10,7 +10,8 @@ FROM base AS build
 COPY . /usr/src/app
 WORKDIR /usr/src/app
 RUN --mount=type=cache,id=/pnpm/store,target=/pnpm/store pnpm install --frozen-lockfile
-# RUN pnpm run --filter=apollo build ## TODO: Uncomment when apollo has a build step
+## TODO: Uncomment when apollo has a build step
+# RUN pnpm run --filter=apollo build 
 RUN pnpm deploy --filter=apollo --prod /prod/apollo
 
 # Runtime
