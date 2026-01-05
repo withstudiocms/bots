@@ -1,0 +1,11 @@
+# See https://github.com/actions/labeler/tree/main for more information about the labeler action
+
+apollo:
+  - changed-files:
+      - any-glob-to-any-file:
+          - packages/apollo/**
+
+artemis:
+  - changed-files:
+      - any-glob-to-any-file:
+          - packages/artemis/**
