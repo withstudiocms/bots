@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>withstudiocms/renovate-config"],
+  "packageRules": [
+    {
+      "groupName": "Apollo Dependencies",
+      "matchManagers": ["npm"],
+      "matchFileNames": ["packages/apollo/**"]
+    },
+    {
+      "groupName": "Artemis Dependencies",
+      "matchManagers": ["npm"],
+      "matchFileNames": ["packages/artemis/**"]
+    }
+  ],
+  "ignoreDeps": ["@types/node", "node", "npm", "pnpm"]
+}
