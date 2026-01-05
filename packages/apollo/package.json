@@ -1,5 +1,5 @@
 {
-  "name": "@withstudiocms/apollo",
+  "name": "apollo",
   "version": "1.0.0",
   "description": "Apollo is a fully-configurable Discord Bot that helps with managing Discord Servers for OSS projects.",
   "type": "module",
