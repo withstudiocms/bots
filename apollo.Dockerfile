@@ -1,4 +1,3 @@
-# Setup
 FROM node:lts-alpine AS base
 ENV NODE_ENV=production
 ENV PNPM_HOME="/pnpm"
@@ -14,7 +13,6 @@ RUN --mount=type=cache,id=/pnpm/store,target=/pnpm/store pnpm install --frozen-l
 # RUN pnpm run --filter=apollo build 
 RUN pnpm deploy --filter=apollo --prod /prod/apollo
 
-# Runtime
 FROM base AS runtime
 COPY --from=build /prod/apollo /prod/apollo
 WORKDIR /prod/apollo
