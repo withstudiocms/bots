@@ -23,7 +23,7 @@ Artemis is a powerful Effect based discord bot that is designed to interact with
 ```yml
 services:
   app:
-    image: ghcr.io/withstudiocms/artemis:latest
+    image: ghcr.io/withstudiocms/bots-artemis:latest
     restart: always
     ports:
       - "3000:3000"

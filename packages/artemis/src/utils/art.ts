@@ -20,7 +20,7 @@
  * - Do not trim or modify whitespace if preserving visual alignment is required.
  *
  * @public
- * @see https://github.com/withstudiocms/artemis
+ * @see https://github.com/withstudiocms/bots
  */
 export const BRAND_ART = `
 .---------------------------------------------------------------.
@@ -31,6 +31,6 @@ export const BRAND_ART = `
 |    ██║  ██║██║  ██║   ██║   ███████╗██║ ╚═╝ ██║██║███████║    |
 |    ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝     ╚═╝╚═╝╚══════╝    |
 |                                                               |
-|           https://github.com/withstudiocms/artemis            |
+|           https://github.com/withstudiocms/bots               |
 '---------------------------------------------------------------'
 `;
