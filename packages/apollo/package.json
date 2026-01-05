@@ -16,7 +16,10 @@
   "author": "withstudiocms",
   "license": "MIT",
   "files": [
-    "src"
+    "src",
+    "package.json",
+    "README.md",
+    "LICENSE"
   ],
   "dependencies": {
     "@libsql/client": "catalog:",
