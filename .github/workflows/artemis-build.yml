@@ -1,4 +1,4 @@
-name: CI - Artemis Build
+name: CI - Artemis Build and Deploy
 
 on:
   workflow_dispatch:

@@ -1,4 +1,4 @@
-name: CI - Apollo Build
+name: CI - Apollo Build and Deploy
 
 on:
   workflow_dispatch:
