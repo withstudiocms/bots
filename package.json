@@ -1,0 +1,44 @@
+{
+  "name": "root",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "postinstall": "ts-patch install",
+    "clean": "node scripts/clean.mjs",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+
+    "build": "pnpm --recursive --parallel --filter \"./packages/**/*\" run build",
+    "check": "tsc -b tsconfig.json",
+    "check-recursive": "pnpm --recursive --filter \"./packages/**/*\" exec tsc -b tsconfig.json",
+
+    "apollo:db:push": "pnpm --filter apollo run db:push",
+    "apollo:db:generate": "pnpm --filter apollo run db:generate",
+    "apollo:db:migrate": "pnpm --filter apollo run db:migrate",
+    "apollo:db:check": "pnpm --filter apollo run db:check",
+    "apollo:db:studio": "pnpm --filter apollo run db:studio",
+
+    "artemis:db:push": "pnpm --filter artemis run db:push",
+    "artemis:db:generate": "pnpm --filter artemis run db:generate",
+    "artemis:db:migrate": "pnpm --filter artemis run db:migrate",
+    "artemis:db:check": "pnpm --filter artemis run db:check",
+    "artemis:db:studio": "pnpm --filter artemis run db:studio"
+  },
+  "keywords": [],
+  "author": "withstudiocms",
+  "license": "MIT",
+  "packageManager": "pnpm@10.17.1",
+  "engines": {
+    "node": "22.20.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.2",
+    "@effect/language-service": "^0.44.0",
+    "@types/node": "^24.7.1",
+    "ts-patch": "^3.3.0",
+    "tsdown": "^0.15.7",
+    "typescript": "catalog:"
+  }
+}

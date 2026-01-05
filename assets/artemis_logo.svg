@@ -1,0 +1,46 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#E8EAFF"/>
+  
+  <!-- Crescent moon -->
+  <path d="M 100 30 Q 130 50, 130 100 Q 130 150, 100 170 Q 115 165, 125 150 Q 135 135, 135 100 Q 135 65, 125 50 Q 115 35, 100 30 Z" 
+        fill="#5865F2"/>
+  
+  <!-- Bow -->
+  <path d="M 60 70 Q 50 100, 60 130" 
+        stroke="#5865F2" 
+        stroke-width="4" 
+        fill="none" 
+        stroke-linecap="round"/>
+  
+  <!-- Bowstring -->
+  <line x1="60" y1="70" x2="60" y2="130" 
+        stroke="#5865F2" 
+        stroke-width="2"/>
+  
+  <!-- Arrow -->
+  <g>
+    <!-- Arrow shaft -->
+    <line x1="60" y1="100" x2="145" y2="100" 
+          stroke="#5865F2" 
+          stroke-width="3" 
+          stroke-linecap="round"/>
+    
+    <!-- Arrow head -->
+    <path d="M 145 100 L 135 95 L 138 100 L 135 105 Z" 
+          fill="#5865F2"/>
+    
+    <!-- Arrow fletching -->
+    <path d="M 65 97 L 60 100 L 65 103" 
+          stroke="#5865F2" 
+          stroke-width="2" 
+          fill="none"/>
+  </g>
+  
+  <!-- Stars -->
+  <circle cx="75" cy="50" r="2" fill="#5865F2"/>
+  <circle cx="140" cy="60" r="2" fill="#5865F2"/>
+  <circle cx="155" cy="85" r="2" fill="#5865F2"/>
+  <circle cx="70" cy="145" r="2" fill="#5865F2"/>
+  <circle cx="150" cy="140" r="2" fill="#5865F2"/>
+</svg>

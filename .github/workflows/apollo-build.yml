@@ -1,0 +1,29 @@
+name: CI - Apollo Build
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'packages/apollo/**'
+
+permissions:
+  deployments: write
+  contents: read
+  packages: write
+
+jobs:
+  artemis-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Build and Deploy Apollo Docker Image
+        uses: ./.github/actions/docker-build
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DOCKERFILE: apollo.Dockerfile
+          IMAGE_NAME: apollo
+          DOKPLOY_API_URL: ${{ secrets.DOKPLOY_API_URL }}
+          DOKPLOY_API_KEY: ${{ secrets.DOKPLOY_API_KEY }}
+          DOKPLOY_COMPOSE_ID: ${{ secrets.APOLLO_DOKPLOY_COMPOSE_ID }}

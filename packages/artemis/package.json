@@ -1,0 +1,50 @@
+{
+  "name": "artemis",
+  "version": "1.0.0",
+  "description": "A powerful Effect based discord bot that is designed to interact with your Discord community and your Github Organization.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "tsdown",
+    "db:push": "pnpm drizzle-kit push",
+    "db:generate": "pnpm drizzle-kit generate",
+    "db:migrate": "pnpm drizzle-kit migrate",
+    "db:check": "pnpm drizzle-kit check",
+    "db:studio": "pnpm drizzle-kit studio"
+  },
+  "keywords": [],
+  "author": "withstudiocms",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "html"
+  ],
+  "dependencies": {
+    "@effect/workflow": "^0.11.2",
+    "@libsql/client": "catalog:",
+    "@resvg/resvg-js": "^2.6.2",
+    "dotenv": "catalog:",
+    "drizzle-orm": "catalog:",
+    "algoliasearch": "^4.20.0",
+    "@algolia/requester-fetch": "^4.20.0",
+    "@algolia/client-search": "4.25.3",
+    "@atproto/api": "^0.18.7"
+  },
+  "devDependencies": {
+    "@effect/language-service": "^0.41.1",
+    "@effect/platform": "^0.92.1",
+    "@effect/platform-node": "^0.98.3",
+    "@octokit/plugin-rest-endpoint-methods": "^16.1.0",
+    "@octokit/types": "^15.0.0",
+    "@octokit/webhooks": "catalog:",
+    "@octokit/webhooks-types": "catalog:",
+    "@types/node": "^24.7.1",
+    "dfx": "^0.126.0",
+    "dotenv": "catalog:",
+    "drizzle-kit": "catalog:",
+    "effect": "^3.18.4",
+    "groq-sdk": "^0.33.0",
+    "octokit": "^5.0.3",
+    "html-entities": "^2.6.0"
+  }
+}

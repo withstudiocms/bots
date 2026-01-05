@@ -1,0 +1,39 @@
+{
+  "name": "@withstudiocms/apollo",
+  "version": "1.0.0",
+  "description": "Apollo is a fully-configurable Discord Bot that helps with managing Discord Servers for OSS projects.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm exec tsx --env-file=.env ./src/index.ts",
+    "db:push": "pnpm drizzle-kit push",
+    "db:generate": "pnpm drizzle-kit generate",
+    "db:migrate": "pnpm drizzle-kit migrate",
+    "db:check": "pnpm drizzle-kit check",
+    "db:studio": "pnpm drizzle-kit studio"
+  },
+  "keywords": [],
+  "author": "withstudiocms",
+  "license": "MIT",
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "@libsql/client": "catalog:",
+    "@octokit/webhooks": "catalog:",
+    "@octokit/webhooks-types": "catalog:",
+    "bufferutil": "^4.0.8",
+    "consola": "^3.2.3",
+    "discord.js": "^14.18.0",
+    "dotenv": "catalog:",
+    "drizzle-orm": "catalog:",
+    "octokit": "catalog:",
+    "parse-duration": "^1.1.0",
+    "pretty-ms": "^9.2.0",
+    "zlib-sync": "^0.1.9",
+    "tsx": "^4.19.2"
+  },
+  "devDependencies": {
+    "drizzle-kit": "catalog:"
+  }
+}
