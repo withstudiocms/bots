@@ -1,10 +1,10 @@
-{  
+{
   "description": "Activities schema for Apollo",
   "type": "object",
   "properties": {
     "type": {
       "type": "string",
-      "enum": ["playing", "streaming", "listening", "watching", "competing", "custom"]
+      "enum": ["custom"]
     },
     "name": {
       "type": "string",

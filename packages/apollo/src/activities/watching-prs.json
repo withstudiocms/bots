@@ -1,5 +1,5 @@
 {
   "$schema": "../activities.schema.json",
-  "type": "watching",
-  "name": "for new GitHub PRs"
+  "type": "custom",
+  "name": "Watching for new GitHub PRs"
 }
