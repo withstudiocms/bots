@@ -1,0 +1,4 @@
+{
+  "$schema": "../ping-replies.schema.json",
+  "message": "Error 404: Attention not found."
+}
