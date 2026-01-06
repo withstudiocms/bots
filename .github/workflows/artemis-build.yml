@@ -22,7 +22,11 @@ jobs:
       - name: Build and Deploy Artemis Docker Image
         uses: ./.github/actions/docker-build
         with:
+          GITHUB_ACTOR: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_SHA: ${{ github.sha }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
           DOCKERFILE: artemis.Dockerfile
           IMAGE_NAME: artemis
           DOKPLOY_API_URL: ${{ secrets.DOKPLOY_API_URL }}

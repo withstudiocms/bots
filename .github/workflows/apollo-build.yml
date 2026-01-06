@@ -13,7 +13,7 @@ permissions:
   packages: write
 
 jobs:
-  artemis-build:
+  apollo-build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -22,7 +22,11 @@ jobs:
       - name: Build and Deploy Apollo Docker Image
         uses: ./.github/actions/docker-build
         with:
+          GITHUB_ACTOR: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_SHA: ${{ github.sha }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
           DOCKERFILE: apollo.Dockerfile
           IMAGE_NAME: apollo
           DOKPLOY_API_URL: ${{ secrets.DOKPLOY_API_URL }}
