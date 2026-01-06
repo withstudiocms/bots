@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm exec tsx --env-file=.env ./src/index.ts",
+    "copy-build-json": "cp -r src/activities dist/activities && cp -r src/ping-replies dist/ping-replies && cp src/*.schema.json dist/",
+    "build": "tsdown && pnpm copy-build-json",
     "db:push": "pnpm drizzle-kit push",
     "db:generate": "pnpm drizzle-kit generate",
     "db:migrate": "pnpm drizzle-kit migrate",
@@ -16,7 +17,7 @@
   "author": "withstudiocms",
   "license": "MIT",
   "files": [
-    "src",
+    "dist",
     "package.json",
     "README.md",
     "LICENSE"
