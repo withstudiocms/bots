@@ -1,6 +1,6 @@
 import 'dotenv/config';
 import consola from 'consola';
-import { Client, GatewayIntentBits, REST, Routes } from 'discord.js';
+import { Client, GatewayIntentBits, MessageType, REST, Routes } from 'discord.js';
 import { and, eq } from 'drizzle-orm';
 import { startActivityCycle } from './activities.js';
 import { commands } from './commands.js';
@@ -175,7 +175,7 @@ client.on('messageCreate', async (interaction) => {
 });
 
 client.on('messageCreate', async (message) => {
-	if (message.author.bot) return;
+	if (message.author.bot || message.type === MessageType.Reply && message.mentions.repliedUser?.id === client.user?.id) return;
 
 	// biome-ignore lint/style/noNonNullAssertion: this is fine
 	if (message.mentions.members?.has(client.user!.id)) {

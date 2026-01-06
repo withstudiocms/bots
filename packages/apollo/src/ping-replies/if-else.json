@@ -1,0 +1,4 @@
+{
+  "$schema": "../ping-replies.schema.json",
+  "message": "My existence is a series of if/else statements and you are currently the else."
+}
