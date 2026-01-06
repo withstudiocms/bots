@@ -17,4 +17,4 @@ FROM base AS runtime
 COPY --from=build /prod/apollo /prod/apollo
 WORKDIR /prod/apollo
 EXPOSE 3000
-CMD [ "pnpm", "exec", "tsx", "./src/index.ts" ]
+CMD [ "node", "--import", "tsx", "./src/index.ts" ]
