@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A powerful Effect based discord bot that is designed to interact with your Discord community and your Github Organization.",
   "type": "module",
-  "private": true,
   "scripts": {
     "build": "tsdown",
     "db:push": "pnpm drizzle-kit push",

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Apollo is a fully-configurable Discord Bot that helps with managing Discord Servers for OSS projects.",
   "type": "module",
-  "main": "index.js",
   "scripts": {
     "copy-build-json": "cp -r src/activities dist/activities && cp -r src/ping-replies dist/ping-replies && cp src/*.schema.json dist/",
     "build": "tsdown && pnpm copy-build-json",
@@ -17,10 +16,7 @@
   "author": "withstudiocms",
   "license": "MIT",
   "files": [
-    "dist",
-    "package.json",
-    "README.md",
-    "LICENSE"
+    "dist"
   ],
   "dependencies": {
     "@libsql/client": "catalog:",
