@@ -4,13 +4,13 @@
   "packageRules": [
     {
       "groupName": "Apollo Dependencies",
-      "matchManagers": ["npm"],
-      "matchFileNames": ["packages/apollo/**"]
+      "matchManagers": ["npm", "dockerfile"],
+      "matchFileNames": ["packages/apollo/**", "apollo.Dockerfile"]
     },
     {
       "groupName": "Artemis Dependencies",
-      "matchManagers": ["npm"],
-      "matchFileNames": ["packages/artemis/**"]
+      "matchManagers": ["npm", "dockerfile"],
+      "matchFileNames": ["packages/artemis/**", "artemis.Dockerfile"]
     }
   ],
   "ignoreDeps": ["@types/node", "node", "npm", "pnpm"]
