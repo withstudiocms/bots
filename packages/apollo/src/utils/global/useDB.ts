@@ -8,8 +8,8 @@ import { drizzle } from 'drizzle-orm/libsql/node';
 export const useDB = () => {
 	const client = drizzle({
 		connection: {
-			url: process.env.DATABASE_URL!,
-			authToken: process.env.DATABASE_AUTH_TOKEN!,
+			url: process.env.TURSO_URL!,
+			authToken: process.env.TURSO_AUTH_TOKEN!,
 		},
 	});
 
