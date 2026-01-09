@@ -1,21 +1,45 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>withstudiocms/renovate-config"],
+  "extends": [
+    "github>withstudiocms/renovate-config"
+  ],
   "packageRules": [
     {
       "groupName": "Apollo Dependencies",
-      "matchManagers": ["npm", "dockerfile"],
-      "matchFileNames": ["packages/apollo/**", "apollo.Dockerfile"]
+      "matchManagers": [
+        "npm",
+        "dockerfile"
+      ],
+      "matchFileNames": [
+        "packages/apollo/**",
+        "apollo.Dockerfile"
+      ]
     },
     {
       "groupName": "Artemis Dependencies",
-      "matchManagers": ["npm", "dockerfile"],
-      "matchFileNames": ["packages/artemis/**", "artemis.Dockerfile"]
+      "matchManagers": [
+        "npm",
+        "dockerfile"
+      ],
+      "matchFileNames": [
+        "packages/artemis/**",
+        "artemis.Dockerfile"
+      ]
     },
     {
-      "excludePackagePatterns": ["^@algolia/", "^algoliasearch"],
-      "matchUpdateTypes": ["major"]
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "matchPackageNames": [
+        "!/^@algolia//",
+        "!/^algoliasearch/"
+      ]
     }
   ],
-  "ignoreDeps": ["@types/node", "node", "npm", "pnpm"]
+  "ignoreDeps": [
+    "@types/node",
+    "node",
+    "npm",
+    "pnpm"
+  ]
 }
