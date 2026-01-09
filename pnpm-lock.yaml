@@ -131,9 +131,6 @@ importers:
         specifier: 'catalog:'
         version: 0.44.7(@libsql/client@0.15.15(bufferutil@4.1.0))
     devDependencies:
-      '@effect/language-service':
-        specifier: ^0.41.1
-        version: 0.41.1
       '@effect/platform':
         specifier: ^0.92.1
         version: 0.92.1(effect@3.19.14)
@@ -152,9 +149,6 @@ importers:
       '@octokit/webhooks-types':
         specifier: 'catalog:'
         version: 7.6.1
-      '@types/node':
-        specifier: ^24.7.1
-        version: 24.10.4
       dfx:
         specifier: ^0.126.0
         version: 0.126.1(@effect/platform@0.92.1(effect@3.19.14))(effect@3.19.14)
@@ -375,10 +369,6 @@ packages:
         optional: true
       lmdb:
         optional: true
-
-  '@effect/language-service@0.41.1':
-    resolution: {integrity: sha512-BZaFkF1JdoTIJuzT7mNfUnfQG2MLxkQtn5b9y1z0BZUIcNfs5p7yR0ekYfTkPkt+TVD+9HE12VC1SsG5DReKww==}
-    hasBin: true
 
   '@effect/language-service@0.44.1':
     resolution: {integrity: sha512-BH5F8B1CFbkL2iaX8Ly5OFO7wHfWVc+FJ7xxF+XF2tVOW1gaWxxyBdvyPpZSZDbL8wp+Fii7NH5lXh+Q9W7Tqg==}
@@ -2477,8 +2467,6 @@ snapshots:
       '@effect/platform': 0.92.1(effect@3.19.14)
       effect: 3.19.14
       uuid: 11.1.0
-
-  '@effect/language-service@0.41.1': {}
 
   '@effect/language-service@0.44.1': {}
 

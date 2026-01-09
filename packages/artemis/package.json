@@ -30,14 +30,12 @@
     "@atproto/api": "^0.18.7"
   },
   "devDependencies": {
-    "@effect/language-service": "^0.41.1",
     "@effect/platform": "^0.92.1",
     "@effect/platform-node": "^0.98.3",
     "@octokit/plugin-rest-endpoint-methods": "^16.1.0",
     "@octokit/types": "^15.0.0",
     "@octokit/webhooks": "catalog:",
     "@octokit/webhooks-types": "catalog:",
-    "@types/node": "^24.7.1",
     "dfx": "^0.126.0",
     "dotenv": "catalog:",
     "drizzle-kit": "catalog:",
