@@ -11,6 +11,10 @@
       "groupName": "Artemis Dependencies",
       "matchManagers": ["npm", "dockerfile"],
       "matchFileNames": ["packages/artemis/**", "artemis.Dockerfile"]
+    },
+    {
+      "excludePackagePatterns": ["^@algolia/", "^algoliasearch"],
+      "matchUpdateTypes": ["major"]
     }
   ],
   "ignoreDeps": ["@types/node", "node", "npm", "pnpm"]
