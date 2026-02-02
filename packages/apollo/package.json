@@ -22,16 +22,16 @@
     "@libsql/client": "catalog:",
     "@octokit/webhooks": "catalog:",
     "@octokit/webhooks-types": "catalog:",
-    "bufferutil": "^4.0.8",
-    "consola": "^3.2.3",
-    "discord.js": "^14.18.0",
+    "bufferutil": "^4.1.0",
+    "consola": "^3.4.2",
+    "discord.js": "^14.25.1",
     "dotenv": "catalog:",
     "drizzle-orm": "catalog:",
     "octokit": "catalog:",
-    "parse-duration": "^1.1.0",
-    "pretty-ms": "^9.2.0",
-    "zlib-sync": "^0.1.9",
-    "tsx": "^4.19.2"
+    "parse-duration": "^1.1.2",
+    "pretty-ms": "^9.3.0",
+    "zlib-sync": "^0.1.10",
+    "tsx": "^4.21.0"
   },
   "devDependencies": {
     "drizzle-kit": "catalog:"
