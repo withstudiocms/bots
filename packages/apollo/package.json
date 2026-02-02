@@ -28,7 +28,7 @@
     "dotenv": "catalog:",
     "drizzle-orm": "catalog:",
     "octokit": "catalog:",
-    "parse-duration": "^1.1.0",
+    "parse-duration": "^2.1.5",
     "pretty-ms": "^9.2.0",
     "zlib-sync": "^0.1.9",
     "tsx": "^4.19.2"
