@@ -8,25 +8,25 @@ settings:
 catalogs:
   default:
     '@libsql/client':
-      specifier: ^0.15.15
-      version: 0.15.15
+      specifier: ^0.17.0
+      version: 0.17.0
     '@octokit/webhooks':
-      specifier: ^14.1.3
+      specifier: ^14.2.0
       version: 14.2.0
     '@octokit/webhooks-types':
       specifier: ^7.6.1
       version: 7.6.1
     dotenv:
-      specifier: ^17.2.3
-      version: 17.2.3
+      specifier: ^17.3.1
+      version: 17.3.1
     drizzle-kit:
-      specifier: ^0.31.5
-      version: 0.31.8
+      specifier: ^0.31.9
+      version: 0.31.9
     drizzle-orm:
-      specifier: ^0.44.6
-      version: 0.44.7
+      specifier: ^0.45.1
+      version: 0.45.1
     octokit:
-      specifier: ^5.0.3
+      specifier: ^5.0.5
       version: 5.0.5
     typescript:
       specifier: ^5.9.3
@@ -59,7 +59,7 @@ importers:
     dependencies:
       '@libsql/client':
         specifier: 'catalog:'
-        version: 0.15.15(bufferutil@4.1.0)
+        version: 0.17.0(bufferutil@4.1.0)
       '@octokit/webhooks':
         specifier: 'catalog:'
         version: 14.2.0
@@ -77,10 +77,10 @@ importers:
         version: 14.25.1(bufferutil@4.1.0)
       dotenv:
         specifier: 'catalog:'
-        version: 17.2.3
+        version: 17.3.1
       drizzle-orm:
         specifier: 'catalog:'
-        version: 0.44.7(@libsql/client@0.15.15(bufferutil@4.1.0))
+        version: 0.45.1(@libsql/client@0.17.0(bufferutil@4.1.0))
       octokit:
         specifier: 'catalog:'
         version: 5.0.5
@@ -99,7 +99,7 @@ importers:
     devDependencies:
       drizzle-kit:
         specifier: 'catalog:'
-        version: 0.31.8
+        version: 0.31.9
 
   packages/artemis:
     dependencies:
@@ -117,7 +117,7 @@ importers:
         version: 0.16.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(effect@3.19.15)
       '@libsql/client':
         specifier: 'catalog:'
-        version: 0.15.15(bufferutil@4.1.0)
+        version: 0.17.0(bufferutil@4.1.0)
       '@resvg/resvg-js':
         specifier: ^2.6.2
         version: 2.6.2
@@ -126,10 +126,10 @@ importers:
         version: 4.25.3
       dotenv:
         specifier: 'catalog:'
-        version: 17.2.3
+        version: 17.3.1
       drizzle-orm:
         specifier: 'catalog:'
-        version: 0.44.7(@libsql/client@0.15.15(bufferutil@4.1.0))
+        version: 0.45.1(@libsql/client@0.17.0(bufferutil@4.1.0))
     devDependencies:
       '@effect/platform':
         specifier: ^0.94.2
@@ -154,7 +154,7 @@ importers:
         version: 0.127.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15)
       drizzle-kit:
         specifier: 'catalog:'
-        version: 0.31.8
+        version: 0.31.9
       effect:
         specifier: ^3.19.15
         version: 3.19.15
@@ -892,11 +892,11 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@libsql/client@0.15.15':
-    resolution: {integrity: sha512-twC0hQxPNHPKfeOv3sNT6u2pturQjLcI+CnpTM0SjRpocEGgfiZ7DWKXLNnsothjyJmDqEsBQJ5ztq9Wlu470w==}
+  '@libsql/client@0.17.0':
+    resolution: {integrity: sha512-TLjSU9Otdpq0SpKHl1tD1Nc9MKhrsZbCFGot3EbCxRa8m1E5R1mMwoOjKMMM31IyF7fr+hPNHLpYfwbMKNusmg==}
 
-  '@libsql/core@0.15.15':
-    resolution: {integrity: sha512-C88Z6UKl+OyuKKPwz224riz02ih/zHYI3Ho/LAcVOgjsunIRZoBw7fjRfaH9oPMmSNeQfhGklSG2il1URoOIsA==}
+  '@libsql/core@0.17.0':
+    resolution: {integrity: sha512-hnZRnJHiS+nrhHKLGYPoJbc78FE903MSDrFJTbftxo+e52X+E0Y0fHOCVYsKWcg6XgB7BbJYUrz/xEkVTSaipw==}
 
   '@libsql/darwin-arm64@0.5.22':
     resolution: {integrity: sha512-4B8ZlX3nIDPndfct7GNe0nI3Yw6ibocEicWdC4fvQbSs/jdq/RC2oCsoJxJ4NzXkvktX70C1J4FcmmoBy069UA==}
@@ -908,12 +908,8 @@ packages:
     cpu: [x64]
     os: [darwin]
 
-  '@libsql/hrana-client@0.7.0':
-    resolution: {integrity: sha512-OF8fFQSkbL7vJY9rfuegK1R7sPgQ6kFMkDamiEccNUvieQ+3urzfDFI616oPl8V7T9zRmnTkSjMOImYCAVRVuw==}
-
-  '@libsql/isomorphic-fetch@0.3.1':
-    resolution: {integrity: sha512-6kK3SUK5Uu56zPq/Las620n5aS9xJq+jMBcNSOmjhNf/MUvdyji4vrMTqD7ptY7/4/CAVEAYDeotUz60LNQHtw==}
-    engines: {node: '>=18.0.0'}
+  '@libsql/hrana-client@0.9.0':
+    resolution: {integrity: sha512-pxQ1986AuWfPX4oXzBvLwBnfgKDE5OMhAdR/5cZmRaB4Ygz5MecQybvwZupnRz341r2CtFmbk/BhSu7k2Lm+Jw==}
 
   '@libsql/isomorphic-ws@0.1.5':
     resolution: {integrity: sha512-DtLWIH29onUYR00i0GlQ3UdcTRC6EP4u9w/h9LxpUZJWRMARk6dQwZ6Jkd+QdwVpuAOrdxt18v0K2uIYR3fwFg==}
@@ -1519,6 +1515,9 @@ packages:
     resolution: {integrity: sha512-5IKcdX0nnYavi6G7TtOhwkYzyjfJlatbjMjuLSfE2kYT5pMDOilZ4OvMhi637CcDICTmz3wARPoyhqyX1Y+XvA==}
     engines: {node: ^14.18.0 || >=16.10.0}
 
+  cross-fetch@4.1.0:
+    resolution: {integrity: sha512-uKm5PU+MHTootlWEY+mZ4vvXoCn4fLQxT9dSc1sXVMSFkINTJVN8cAQROpwcKm8bJ/c7rgZVIBWzH5T78sNZZw==}
+
   data-uri-to-buffer@4.0.1:
     resolution: {integrity: sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==}
     engines: {node: '>= 12'}
@@ -1568,16 +1567,16 @@ packages:
     resolution: {integrity: sha512-2l0gsPOLPs5t6GFZfQZKnL1OJNYFcuC/ETWsW4VtKVD/tg4ICa9x+jb9bkPffkMdRpRpuUaO/fKkHCBeiCKh8g==}
     engines: {node: '>=18'}
 
-  dotenv@17.2.3:
-    resolution: {integrity: sha512-JVUnt+DUIzu87TABbhPmNfVdBDt18BLOWjMUFJMSi/Qqg7NTYtabbvSNJGOJ7afbRuv9D/lngizHtP7QyLQ+9w==}
+  dotenv@17.3.1:
+    resolution: {integrity: sha512-IO8C/dzEb6O3F9/twg6ZLXz164a2fhTnEWb95H23Dm4OuN+92NmEAlTrupP9VW6Jm3sO26tQlqyvyi4CsnY9GA==}
     engines: {node: '>=12'}
 
-  drizzle-kit@0.31.8:
-    resolution: {integrity: sha512-O9EC/miwdnRDY10qRxM8P3Pg8hXe3LyU4ZipReKOgTwn4OqANmftj8XJz1UPUAS6NMHf0E2htjsbQujUTkncCg==}
+  drizzle-kit@0.31.9:
+    resolution: {integrity: sha512-GViD3IgsXn7trFyBUUHyTFBpH/FsHTxYJ66qdbVggxef4UBPHRYxQaRzYLTuekYnk9i5FIEL9pbBIwMqX/Uwrg==}
     hasBin: true
 
-  drizzle-orm@0.44.7:
-    resolution: {integrity: sha512-quIpnYznjU9lHshEOAYLoZ9s3jweleHlZIAWR/jX9gAWNg/JhQ1wj0KGRf7/Zm+obRrYd9GjPVJg790QY9N5AQ==}
+  drizzle-orm@0.45.1:
+    resolution: {integrity: sha512-Te0FOdKIistGNPMq2jscdqngBRfBpC8uMFVwqjf6gtTVJHIQ/dosgV/CLBU2N4ZJBsXL5savCba9b0YJskKdcA==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=4'
@@ -2760,18 +2759,19 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@libsql/client@0.15.15(bufferutil@4.1.0)':
+  '@libsql/client@0.17.0(bufferutil@4.1.0)':
     dependencies:
-      '@libsql/core': 0.15.15
-      '@libsql/hrana-client': 0.7.0(bufferutil@4.1.0)
+      '@libsql/core': 0.17.0
+      '@libsql/hrana-client': 0.9.0(bufferutil@4.1.0)
       js-base64: 3.7.8
       libsql: 0.5.22
       promise-limit: 2.7.0
     transitivePeerDependencies:
       - bufferutil
+      - encoding
       - utf-8-validate
 
-  '@libsql/core@0.15.15':
+  '@libsql/core@0.17.0':
     dependencies:
       js-base64: 3.7.8
 
@@ -2781,17 +2781,16 @@ snapshots:
   '@libsql/darwin-x64@0.5.22':
     optional: true
 
-  '@libsql/hrana-client@0.7.0(bufferutil@4.1.0)':
+  '@libsql/hrana-client@0.9.0(bufferutil@4.1.0)':
     dependencies:
-      '@libsql/isomorphic-fetch': 0.3.1
       '@libsql/isomorphic-ws': 0.1.5(bufferutil@4.1.0)
+      cross-fetch: 4.1.0
       js-base64: 3.7.8
       node-fetch: 3.3.2
     transitivePeerDependencies:
       - bufferutil
+      - encoding
       - utf-8-validate
-
-  '@libsql/isomorphic-fetch@0.3.1': {}
 
   '@libsql/isomorphic-ws@0.1.5(bufferutil@4.1.0)':
     dependencies:
@@ -3344,6 +3343,12 @@ snapshots:
 
   consola@3.4.2: {}
 
+  cross-fetch@4.1.0:
+    dependencies:
+      node-fetch: 2.7.0
+    transitivePeerDependencies:
+      - encoding
+
   data-uri-to-buffer@4.0.1: {}
 
   debug@4.4.3:
@@ -3394,9 +3399,9 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  dotenv@17.2.3: {}
+  dotenv@17.3.1: {}
 
-  drizzle-kit@0.31.8:
+  drizzle-kit@0.31.9:
     dependencies:
       '@drizzle-team/brocli': 0.10.2
       '@esbuild-kit/esm-loader': 2.6.5
@@ -3405,9 +3410,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.44.7(@libsql/client@0.15.15(bufferutil@4.1.0)):
+  drizzle-orm@0.45.1(@libsql/client@0.17.0(bufferutil@4.1.0)):
     optionalDependencies:
-      '@libsql/client': 0.15.15(bufferutil@4.1.0)
+      '@libsql/client': 0.17.0(bufferutil@4.1.0)
 
   dts-resolver@2.1.3: {}
 
