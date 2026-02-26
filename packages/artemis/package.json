@@ -24,13 +24,13 @@
     "@resvg/resvg-js": "^2.6.2",
     "dotenv": "catalog:",
     "drizzle-orm": "catalog:",
-    "algoliasearch": "^4.25.3",
-    "@algolia/requester-fetch": "^4.25.3",
+    "algoliasearch": "^4.26.0",
+    "@algolia/requester-fetch": "^4.26.0",
     "@algolia/client-search": "4.25.3",
-    "@atproto/api": "^0.18.18"
+    "@atproto/api": "^0.19.0"
   },
   "devDependencies": {
-    "@effect/platform": "^0.94.2",
+    "@effect/platform": "^0.94.5",
     "@effect/platform-node": "^0.104.1",
     "@octokit/plugin-rest-endpoint-methods": "^17.0.0",
     "@octokit/types": "^15.0.2",
@@ -39,7 +39,7 @@
     "dfx": "^0.127.0",
     "dotenv": "catalog:",
     "drizzle-kit": "catalog:",
-    "effect": "^3.19.15",
+    "effect": "^3.19.19",
     "groq-sdk": "^0.37.0",
     "octokit": "^5.0.5",
     "html-entities": "^2.6.0"
