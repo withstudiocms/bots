@@ -61,7 +61,7 @@ runs:
         password: ${{ inputs.GITHUB_TOKEN }}
 
     - name: Build and push image
-      uses: docker/build-push-action@263435318d21b8e681c14492fe198d362a7d2c83 # v6.18.0
+      uses: docker/build-push-action@10e90e3645eae34f1e60eeb005ba3a3d33f178e8 # v6.19.2
       with:
         context: .
         file: ${{ inputs.DOCKERFILE }}
@@ -82,7 +82,7 @@ runs:
         echo "Pushed: ghcr.io/${{ inputs.GITHUB_REPOSITORY }}-${{ inputs.IMAGE_NAME }}:${{ inputs.GITHUB_REF_NAME }}"
 
     - name: Deploy to Dokploy Compose
-      uses: withstudiocms/automations/.github/actions/deploy-dokploy-compose@fe2d43b13c8a63e34ba8b0b9e16008149d8af55f # main
+      uses: withstudiocms/automations/.github/actions/deploy-dokploy-compose@c2dfd186eab9d163cbd535984b82cda1ff8e4689 # main
       with:
         api_url: ${{ inputs.DOKPLOY_API_URL }}
         api_key: ${{ inputs.DOKPLOY_API_KEY }}
