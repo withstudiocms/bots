@@ -37,7 +37,7 @@ runs:
   using: "composite"
   steps:
     - name: Checkout repository
-      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
 
     - name: Set up QEMU (for multi-arch)
       uses: docker/setup-qemu-action@c7c53464625b32c7a7e944ae62b3e17d2b600130 # v3.7.0
@@ -46,7 +46,7 @@ runs:
       uses: docker/setup-buildx-action@8d2750c68a42422c14e847fe6c8ac0403b4cbd6f # v3.12.0
 
     - name: Cache pnpm store
-      uses: actions/cache@cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5.0.3
+      uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # v5.1.0
       with:
         path: ~/.pnpm-store
         key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
@@ -61,7 +61,7 @@ runs:
         password: ${{ inputs.GITHUB_TOKEN }}
 
     - name: Build and push image
-      uses: docker/build-push-action@263435318d21b8e681c14492fe198d362a7d2c83 # v6.18.0
+      uses: docker/build-push-action@10e90e3645eae34f1e60eeb005ba3a3d33f178e8 # v6.19.2
       with:
         context: .
         file: ${{ inputs.DOCKERFILE }}
@@ -82,7 +82,7 @@ runs:
         echo "Pushed: ghcr.io/${{ inputs.GITHUB_REPOSITORY }}-${{ inputs.IMAGE_NAME }}:${{ inputs.GITHUB_REF_NAME }}"
 
     - name: Deploy to Dokploy Compose
-      uses: withstudiocms/automations/.github/actions/deploy-dokploy-compose@fe2d43b13c8a63e34ba8b0b9e16008149d8af55f # main
+      uses: withstudiocms/automations/.github/actions/deploy-dokploy-compose@f32588d80ce35d57905264f7fa473b0f6e297c0a # main
       with:
         api_url: ${{ inputs.DOKPLOY_API_URL }}
         api_key: ${{ inputs.DOKPLOY_API_KEY }}
