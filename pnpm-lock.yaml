@@ -107,14 +107,14 @@ importers:
         specifier: 4.25.3
         version: 4.25.3
       '@algolia/requester-fetch':
-        specifier: ^4.25.3
-        version: 4.25.3
+        specifier: ^4.27.0
+        version: 4.27.0
       '@atproto/api':
-        specifier: ^0.18.18
-        version: 0.18.18
+        specifier: ^0.20.42
+        version: 0.20.42
       '@effect/workflow':
-        specifier: ^0.16.0
-        version: 0.16.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(effect@3.19.15)
+        specifier: ^0.19.1
+        version: 0.19.1(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(effect@3.22.1)
       '@libsql/client':
         specifier: 'catalog:'
         version: 0.15.15(bufferutil@4.1.0)
@@ -122,8 +122,8 @@ importers:
         specifier: ^2.6.2
         version: 2.6.2
       algoliasearch:
-        specifier: ^4.25.3
-        version: 4.25.3
+        specifier: ^4.27.0
+        version: 4.27.0
       dotenv:
         specifier: 'catalog:'
         version: 17.2.3
@@ -132,11 +132,11 @@ importers:
         version: 0.44.7(@libsql/client@0.15.15(bufferutil@4.1.0))
     devDependencies:
       '@effect/platform':
-        specifier: ^0.94.2
-        version: 0.94.2(effect@3.19.15)
+        specifier: ^0.97.1
+        version: 0.97.1(effect@3.22.1)
       '@effect/platform-node':
-        specifier: ^0.104.1
-        version: 0.104.1(@effect/cluster@0.56.1(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/workflow@0.16.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(bufferutil@4.1.0)(effect@3.19.15)
+        specifier: ^0.108.1
+        version: 0.108.1(@effect/cluster@0.56.1(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/workflow@0.19.1(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(bufferutil@4.1.0)(effect@3.22.1)
       '@octokit/plugin-rest-endpoint-methods':
         specifier: ^17.0.0
         version: 17.0.0(@octokit/core@7.0.6)
@@ -151,13 +151,13 @@ importers:
         version: 7.6.1
       dfx:
         specifier: ^0.127.0
-        version: 0.127.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15)
+        version: 0.127.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1)
       drizzle-kit:
         specifier: 'catalog:'
         version: 0.31.8
       effect:
-        specifier: ^3.19.15
-        version: 3.19.15
+        specifier: ^3.22.1
+        version: 3.22.1
       groq-sdk:
         specifier: ^0.37.0
         version: 0.37.0
@@ -170,74 +170,99 @@ importers:
 
 packages:
 
-  '@algolia/cache-browser-local-storage@4.25.3':
-    resolution: {integrity: sha512-J0vrnbIYmDIf9d9qQwBXaHn10VoQ/rA+2iBMr/idfsjHhL9I4h2pC9Dj1i0ggDLv9sPajbeVVh0BdC+mDbo7Tw==}
+  '@algolia/cache-browser-local-storage@4.27.0':
+    resolution: {integrity: sha512-YGog2s57sO20lvpa+hv5XLAAmiTI1kHsCMRtPVfiaOdIQnvRla21lfH08onqEbZihOPVI8GULwt79zQB2ymKzg==}
 
   '@algolia/cache-common@4.25.3':
     resolution: {integrity: sha512-dDls2jhGFdkGnoKwXADBnjosHKdKiwlY+tzaua5J0q9XJptn6DCBDUt3pg46GhTRz+64x08M+dyp8nNoV+3/Jw==}
 
-  '@algolia/cache-in-memory@4.25.3':
-    resolution: {integrity: sha512-6u/fVDr3ZIJIgtqdgUDB5kL9KcOdowmxf052bjfI1XhFTpxmIa49HcAEh1y2R0YqmmNDQHaPCT0QzwkINhWbug==}
+  '@algolia/cache-common@4.27.0':
+    resolution: {integrity: sha512-Sr8zjNXj82p6lO4W9CdzfF0m0/9h/H6VAdSHOTtimm/cTzXIYXRI2IZq7+Nt2ljJ7Ukx+7dIFcxQjE57eQSPsw==}
 
-  '@algolia/client-account@4.25.3':
-    resolution: {integrity: sha512-TkSVT5+davX4Dzt3gyEJ+SAfaVT5bHrZctAiup/AGPV7sNBigv4kuZv40OEbMMgu1uPJ4zw3tA39Oj/mOjd6gg==}
+  '@algolia/cache-in-memory@4.27.0':
+    resolution: {integrity: sha512-abgMRTcVD0IllNvMM9JFhxtyLn1v6Ey7mQ7+BGS3JCzvkCX7KZqlS0BIuVUDgx9sPIfOeNsG/awGzMmP50TwZw==}
 
-  '@algolia/client-analytics@4.25.3':
-    resolution: {integrity: sha512-vHSU4zBaENbRjzwFYB3OQuDlKXwe+YDRgyGh1kKZhcMRDSsEBH/PGNWn+2ZmtbgrNS52TC+TJ8oUOg5wXIeISw==}
+  '@algolia/client-account@4.27.0':
+    resolution: {integrity: sha512-sSHxwrKTKJrwfoR/LcQJZfmiWJcM5d9Rp7afMChxOcdGdkSdIwrNBC8SCcHRenA3GsZ6mg+j6px7KWYxJ34btA==}
+
+  '@algolia/client-analytics@4.27.0':
+    resolution: {integrity: sha512-MqIDyxODljn9ZC4oqjQD0kez2a4zjIJ9ywA/b7cIiUiK/tDjZNTVjYd9WXMKQlXnWUwfrfXJZClVVqN1iCXS+Q==}
 
   '@algolia/client-common@4.25.3':
     resolution: {integrity: sha512-ExRdFnJDe7t1/DgJUsqjzZKeI9gkLft4oVttlyTMru8TRNWA6eZ0wHRj4uQ9N3sxmzPiw3C53wigor705n1yQw==}
 
-  '@algolia/client-personalization@4.25.3':
-    resolution: {integrity: sha512-ycCkQ0nWoH+sf0Gh20kk4NfJ+iUBc59ailqNCFcVl/0th1dtHF0P61IGetTsSmxVPZedDvnHop2z1ujWpYzNmw==}
+  '@algolia/client-common@4.27.0':
+    resolution: {integrity: sha512-ZrT6l/YPQgyIUuBCxcYPeXol2VBLUMuNb1rKXrm6z1f/iTiwqtnEEb16/6CC11+Re0ZGXrdcMVrgDRrzveQ1aQ==}
+
+  '@algolia/client-personalization@4.27.0':
+    resolution: {integrity: sha512-OZqaFFVm+10hAlmxpiTWi/o2n+YKBESbSqSy2yXAumPH/kaK4moJHFblbh8IkV3KZR0lLm4hzPtn8Q2nWNiDUA==}
 
   '@algolia/client-search@4.25.3':
     resolution: {integrity: sha512-GFA99zL6cfNSDEDHfEJ0TmVYmXCJofQpForFhCShQLfRQgBYud9UBHOh4LB6ZSzmtVDIfP33joCA9hxQWPIbFw==}
 
+  '@algolia/client-search@4.27.0':
+    resolution: {integrity: sha512-qmX/f67ay0eZ4V5Io8fWWOcUVo/gqre2yei1PnmEhQU2Gul6ushg25QnNrfu4BODiRrw1rwYveZaLCiHvcUxrQ==}
+
   '@algolia/logger-common@4.25.3':
     resolution: {integrity: sha512-RrlmuHNTc9CIgykWh37QduDAkpX4745KQ75I+vhgT5ER3BBykaYByDTyWkyFSSlZjpDHXtOymu9epNbI5V6OWQ==}
 
-  '@algolia/logger-console@4.25.3':
-    resolution: {integrity: sha512-s8AtfF9W+6Pbxfwkmzywd8ThVJ04D4JZlNyBdCuWpC5b3jzx1JAXT9ZL8K2faUsO4rEdHpy9LXMURvF7cQAE0w==}
+  '@algolia/logger-common@4.27.0':
+    resolution: {integrity: sha512-pIrmQRXtDV+zTMVXKtKCosC2rWhn0F0TdUeb9etA6RiAz6jY6bY6f0+JX7YekDK09SnmZMLIyUa7Jci+Ied9bw==}
 
-  '@algolia/recommend@4.25.3':
-    resolution: {integrity: sha512-/vpXzDFLmrkcM1UOvZae8i/z8wRs2uaKKlPaHqN24ySADWKyf2zxVsDmtcaGMYzBYqYsKR1XKFvwGA5HQxaZxQ==}
+  '@algolia/logger-console@4.27.0':
+    resolution: {integrity: sha512-UWvta8BxsR/u5z9eI088mOSLQaGtmoCtXeN3DYJurlxAdJwPuKtEb5+433kxA6/E9f2/JgoW89KZ1vNP9pcHBQ==}
 
-  '@algolia/requester-browser-xhr@4.25.3':
-    resolution: {integrity: sha512-5ZXO55IDqXUehQKilVYU6OdUBT2XGI+JIki2UsxUkMykH4ksA9EU8YZJth1ZwEYTDC50bVSH32VCYsOFB0MUTA==}
+  '@algolia/recommend@4.27.0':
+    resolution: {integrity: sha512-CFy54xDjrsazPi3KN04yPmLRDT72AKokc3RLOdWQvG0/uEUjj7dhWqe9qenxpL4ydsjO7S1eY5YqmX+uMGonlg==}
+
+  '@algolia/requester-browser-xhr@4.27.0':
+    resolution: {integrity: sha512-dTenMBIIpyp5o3C2ZnfbsuSlD/lL9jPkk6T+2+qm38fyw2nf49ANbcHFE79NgiGrnmw7QrYveCs9NIP3Wk4v6g==}
 
   '@algolia/requester-common@4.25.3':
     resolution: {integrity: sha512-n5dJA5jlIle5IQavlDWBXC46lw/VuwFbbknWJcPiJ6nJ6lRllpLOhV2ZJeUdCvRyg/6zG18h+9+Q/m2d/vLEIw==}
 
-  '@algolia/requester-fetch@4.25.3':
-    resolution: {integrity: sha512-VCi5D+Ds8MRH9nUgTdGes7nEZJN7UIgg6f2xt8k7JbtUkoJpXcDL4Gd3la8t7hDkd9wiBBqVU4tbQ8GpH9oCsw==}
+  '@algolia/requester-common@4.27.0':
+    resolution: {integrity: sha512-VC3prAQVgWTubMStb3mJz6i61Hqbtagi2LeIbgNtoFJFff3XZDcAaO1D5r0GYl2+DrB2VzUHnQXbkiuI+HHYyg==}
 
-  '@algolia/requester-node-http@4.25.3':
-    resolution: {integrity: sha512-7BXWAyVMK1Z3gT+2RPv0I48HfaIlho3nCQaB/tjziw+DdPigHRDq+xjtdzL8y+5O1g7LEdlPI9QHAgDbW/BLXw==}
+  '@algolia/requester-fetch@4.27.0':
+    resolution: {integrity: sha512-kMpcyZENA9sHu2218S0CXi5G/8aqX7dfPfF+10h3IqnCDvwQMb6QPkEDqqKTd3SaR45wmBe5lXDOFVpHxnjm3w==}
+
+  '@algolia/requester-node-http@4.27.0':
+    resolution: {integrity: sha512-y8nUqaUQeSOQ5oaNo0b2QPznyBFW9LoIwljyUphJ+gUZpU6O/j2/C8ovoqDpIe6J0etqHg5RCcBizrCFZuLpyw==}
 
   '@algolia/transporter@4.25.3':
     resolution: {integrity: sha512-2yji+TKjC1uOxhJ9pCdw7lQm6GSiQ+fMvNH4es6oz82DrBpkVHkeU49HmpyTqz8Ai9e+nW/UBz8T9+UyBul3dA==}
 
-  '@atproto/api@0.18.18':
-    resolution: {integrity: sha512-Vg7/sjbwDQZDj8fXtb4E48U4gA+6RC1iSt7onGnH2NyR0E25uds1KnqSKMzqcphdJXrz5GXrgHWc747XPGibzg==}
+  '@algolia/transporter@4.27.0':
+    resolution: {integrity: sha512-PvSbELU4VjN3xSX79ki+zIdOGhTxyJXWvRDzkUjfTx2iNfPWDdTjzKbP1o+268coJztxrkuBwJz90Urek7o1Kw==}
 
-  '@atproto/common-web@0.4.14':
-    resolution: {integrity: sha512-rMU8Q+kpyPpirUS9OqT7aOD1hxKa+diem3vc7BA0lOkj0tU6wcAxegxmbPZ8JaOsR7SSYhP/jCt/5wbT4qqkuQ==}
+  '@atproto/api@0.20.42':
+    resolution: {integrity: sha512-x86WgkHFcNqDIo8gf52npc1KvFXlIPDLAJdIhiH1uUAwiQxDw8/WU0iH3pTl1OXMKkB93kwxG0ihx0fTi5FPbw==}
+    engines: {node: '>=22'}
 
-  '@atproto/lex-data@0.0.9':
-    resolution: {integrity: sha512-1slwe4sG0cyWtsq16+rBoWIxNDqGPkkvN+PV6JuzA7dgUK9bjUmXBGQU4eZlUPSS43X1Nhmr/9VjgKmEzU9vDw==}
+  '@atproto/common-web@0.5.10':
+    resolution: {integrity: sha512-w4JUdsJ3VXt8ewkavYh5m/u0UbxDtFdCKhNZPEpJ0U1vcWIjDaSInIexteETDgD7fBJAhidIEi30MGz1kk49ug==}
+    engines: {node: '>=22'}
 
-  '@atproto/lex-json@0.0.9':
-    resolution: {integrity: sha512-Q2v1EVZcnd+ndyZj1r2UlGikA7q6It24CFPLbxokcf5Ba4RBupH8IkkQX7mqUDSRWPgQdmZYIdW9wUln+MKDqw==}
+  '@atproto/lex-data@0.1.7':
+    resolution: {integrity: sha512-kW/dPLqo/WgCLV+XESR4JKwV6c1rZWJGOfuPupZGTjEDAKoBbKXdaEzX9/1vKQYbZ9U3j0DS/n7OFFK7wBugyQ==}
+    engines: {node: '>=22'}
 
-  '@atproto/lexicon@0.6.1':
-    resolution: {integrity: sha512-/vI1kVlY50Si+5MXpvOucelnYwb0UJ6Qto5mCp+7Q5C+Jtp+SoSykAPVvjVtTnQUH2vrKOFOwpb3C375vSKzXw==}
+  '@atproto/lex-json@0.1.6':
+    resolution: {integrity: sha512-mvrAd0lbyuecIHjyld8QN6MN6CBf4j0GCxLzegsvLh0SvDf+GbYWklkcQqmITL44yFQOwmA/QNIQj0Uvh7+R/g==}
+    engines: {node: '>=22'}
 
-  '@atproto/syntax@0.4.3':
-    resolution: {integrity: sha512-YoZUz40YAJr5nPwvCDWgodEOlt5IftZqPJvA0JDWjuZKD8yXddTwSzXSaKQAzGOpuM+/A3uXRtPzJJqlScc+iA==}
+  '@atproto/lexicon@0.7.12':
+    resolution: {integrity: sha512-bXVWXc2+ctVVUc3CEuWV9mVXRMMQcWmdzmyRE7w2Rli0B36HADU49Vvi7PWTw26zFFqumYVl9b23bW3vrzAzbg==}
+    engines: {node: '>=22'}
 
-  '@atproto/xrpc@0.7.7':
-    resolution: {integrity: sha512-K1ZyO/BU8JNtXX5dmPp7b5UrkLMMqpsIa/Lrj5D3Su+j1Xwq1m6QJ2XJ1AgjEjkI1v4Muzm7klianLE6XGxtmA==}
+  '@atproto/syntax@0.7.5':
+    resolution: {integrity: sha512-6vnLQK8OAzg0dO6z/xnvuXn5zMV0UMI54zbxk7G7BXhGlIlLMb1yo+JVYtAlv8Nxzr+AaFdNZ8AJt+L/QhJMFQ==}
+    engines: {node: '>=22'}
+
+  '@atproto/xrpc@0.8.11':
+    resolution: {integrity: sha512-5M38m9REQouVIA4/Gh0wqo6Vncr3QbG7rb5oqlEbqB+f77pruCk4JLDipfrOrsXH+pdnVnU2IaPXvpsSAC7Mqw==}
+    engines: {node: '>=22'}
 
   '@babel/generator@7.28.6':
     resolution: {integrity: sha512-lOoVRwADj8hjf7al89tvQ2a1lf53Z+7tiXMgpZJL3maQPDxh0DgLMN62B2MKUOFcoodBHLMbDM6WAbKgNy5Suw==}
@@ -374,28 +399,28 @@ packages:
     resolution: {integrity: sha512-BH5F8B1CFbkL2iaX8Ly5OFO7wHfWVc+FJ7xxF+XF2tVOW1gaWxxyBdvyPpZSZDbL8wp+Fii7NH5lXh+Q9W7Tqg==}
     hasBin: true
 
-  '@effect/platform-node-shared@0.57.1':
-    resolution: {integrity: sha512-oX/bApMdoKsyrDiNdJxo7U9Rz1RXsjRv+ecfAPp1qGlSdGIo32wVRvJ2XCHqYj0sqaYJS0pU0/GCulRfVGuJag==}
+  '@effect/platform-node-shared@0.61.1':
+    resolution: {integrity: sha512-MJAJ1Nc43pYJb5ulFtdNID8klNyRLcbQ0zZ7XYRcBAlT/DrCyN4yAD89AzosmUyfOU+LMHdc8LTMt4rKNEMFaA==}
     peerDependencies:
-      '@effect/cluster': ^0.56.1
-      '@effect/platform': ^0.94.2
-      '@effect/rpc': ^0.73.0
-      '@effect/sql': ^0.49.0
-      effect: ^3.19.15
+      '@effect/cluster': ^0.60.1
+      '@effect/platform': ^0.97.1
+      '@effect/rpc': ^0.76.1
+      '@effect/sql': ^0.52.1
+      effect: ^3.22.1
 
-  '@effect/platform-node@0.104.1':
-    resolution: {integrity: sha512-jT1a/z98niK6fnEU8pWHPPCdJMVDRCIdB65lolcOjse5rsTwVbczMjvKkhVQpF63mNWoOnol7OTRNkw5L54llg==}
+  '@effect/platform-node@0.108.1':
+    resolution: {integrity: sha512-BlPW+k/AaVS2ofPGZY1IV3HfLQ3gKGTfkY/jPVOJNOB9NiWb6ufAKOsuNTSAIYP8EzYxTH8tKOENXUXUcANoZA==}
     peerDependencies:
-      '@effect/cluster': ^0.56.1
-      '@effect/platform': ^0.94.2
-      '@effect/rpc': ^0.73.0
-      '@effect/sql': ^0.49.0
-      effect: ^3.19.15
+      '@effect/cluster': ^0.60.2
+      '@effect/platform': ^0.97.1
+      '@effect/rpc': ^0.76.2
+      '@effect/sql': ^0.52.1
+      effect: ^3.22.1
 
-  '@effect/platform@0.94.2':
-    resolution: {integrity: sha512-85vdwpnK4oH/rJ3EuX/Gi2Hkt+K4HvXWr9bxCuqvty9hxyEcRxkJcqTesYrcVoQB6aULb1Za2B0MKoTbvffB3Q==}
+  '@effect/platform@0.97.1':
+    resolution: {integrity: sha512-IevWxwmrxCdeXxbXDx/hiOstHtERRigd1nhZSuHgiFEl7NkBmS/5GVWsRacq4NfJN2uCXqggETKNwij15VEpew==}
     peerDependencies:
-      effect: ^3.19.15
+      effect: ^3.22.1
 
   '@effect/rpc@0.73.0':
     resolution: {integrity: sha512-iMPf6tTriz8sK0l5x4koFId8Hz5nFptHYg8WqyjHGIIVLTpZxuiSqhmXZG7FnAs5N2n6uCEws4wWGcIgXNUrFg==}
@@ -410,13 +435,13 @@ packages:
       '@effect/platform': ^0.94.0
       effect: ^3.19.13
 
-  '@effect/workflow@0.16.0':
-    resolution: {integrity: sha512-MiAdlxx3TixkgHdbw+Yf1Z3tHAAE0rOQga12kIydJqj05Fnod+W/I+kQGRMY/XWRg+QUsVxhmh1qTr7Ype6lrw==}
+  '@effect/workflow@0.19.1':
+    resolution: {integrity: sha512-irU6ddHdIxYOhv0cJiJTk2AUxRmPYjRJ5JdB5UCvpJC4vLCyR2XyKspiCNDiEX1aSGPhVWEXhVMWXR1cErMS3A==}
     peerDependencies:
-      '@effect/experimental': ^0.58.0
-      '@effect/platform': ^0.94.0
-      '@effect/rpc': ^0.73.0
-      effect: ^3.19.13
+      '@effect/experimental': ^0.61.1
+      '@effect/platform': ^0.97.1
+      '@effect/rpc': ^0.76.2
+      effect: ^3.22.1
 
   '@emnapi/core@1.8.1':
     resolution: {integrity: sha512-AvT9QFpxK0Zd8J0jopedNm+w/2fIzvtPKPjqyw9jwvBaReTTqPBk9Hixaz7KbjimP+QNz605/XnjFcDAL2pqBg==}
@@ -429,11 +454,11 @@ packages:
 
   '@esbuild-kit/core-utils@3.3.2':
     resolution: {integrity: sha512-sPRAnw9CdSsRmEtnsl2WXWdyquogVpB3yZ3dgwJfe8zrOzTsV7cJvmwrKVa+0ma5BoiGJ+BoqkMvawbayKUsqQ==}
-    deprecated: 'Merged into tsx: https://tsx.is'
+    deprecated: 'Merged into tsx: https://tsx.hirok.io'
 
   '@esbuild-kit/esm-loader@2.6.5':
     resolution: {integrity: sha512-FxEMIkJKnodyA1OaCUoEvbYRkoZlLZ4d/eXFu9Fh8CbBBgP5EmZxrfTRyN0qpXZ4vOvqnE5YdRdcrmUUXuU+dA==}
-    deprecated: 'Merged into tsx: https://tsx.is'
+    deprecated: 'Merged into tsx: https://tsx.hirok.io'
 
   '@esbuild/aix-ppc64@0.25.12':
     resolution: {integrity: sha512-Hhmwd6CInZ3dwpuGTF8fJG6yoWmsToE+vYgD4nytZVxcu1ulHpUQRAB1UJ8+N1Am3Mz4+xOByoQoSZf4D+CpkA==}
@@ -1100,6 +1125,7 @@ packages:
 
   '@octokit/webhooks-types@7.6.1':
     resolution: {integrity: sha512-S8u2cJzklBC0FgTwWVLaM8tMrDuDMVE4xiTK4EYXM9GntyvrdbSoxqDQa+Fh57CCNApyIpyeqPhhFEmHPfrXgw==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@octokit/webhooks@14.2.0':
     resolution: {integrity: sha512-da6KbdNCV5sr1/txD896V+6W0iamFWrvVl8cHkBSPT+YlvmT3DwXa4jxZnQc+gnuTEqSWbBeoSZYTayXH9wXcw==}
@@ -1447,8 +1473,8 @@ packages:
     resolution: {integrity: sha512-kja8j7PjmncONqaTsB8fQ+wE2mSU2DJ9D4XKoJ5PFWIdRMa6SLSN1ff4mOr4jCbfRSsxR4keIiySJU0N9T5hIQ==}
     engines: {node: '>= 8.0.0'}
 
-  algoliasearch@4.25.3:
-    resolution: {integrity: sha512-kgeIixgDiB+FbH1cHDFUtTNkxdJadHryF8lSPIHHQkEeUrzZA1Hi3PLL+EgNubO0dch4ALNb5G4rw+FDCv3Vbw==}
+  algoliasearch@4.27.0:
+    resolution: {integrity: sha512-C88C5grLa5VOCp9eYZJt+q99ik7yNdm92l7Q9+4XK0Md8kL05Lg8l2v9ZVX0uMW3mH9pAFxMMXlLOvqNumA4lw==}
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -1469,8 +1495,8 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  await-lock@2.2.2:
-    resolution: {integrity: sha512-aDczADvlvTGajTDjcjpJMqRkOF6Qdz3YbPZm/PyW6tKPkx2hlYBzxMhEywM/tU72HrVZjgl5VCdRuMlA7pZ8Gw==}
+  await-lock@3.0.0:
+    resolution: {integrity: sha512-eO6fLiSnrJrMdjWMNK8zbVRXPs2TKJg78iKZd9wDpN3na5tcoV6EoeiOlMgk2QaAQ1gIrK1YuMsJHXWqz89tSA==}
 
   before-after-hook@4.0.0:
     resolution: {integrity: sha512-q6tR3RPqIB1pMiTRMFcZwuG5T8vwp+vUvEG0vuI6B+Rikh5BfPp2fQ82c925FOs+b0lcFQ8CFrL+KbilfZFhOQ==}
@@ -1681,8 +1707,8 @@ packages:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
-  effect@3.19.15:
-    resolution: {integrity: sha512-vzMmgfZKLcojmUjBdlQx+uaKryO7yULlRxjpDnHdnvcp1NPHxJyoM6IOXBLlzz2I/uPtZpGKavt5hBv7IvGZkA==}
+  effect@3.22.1:
+    resolution: {integrity: sha512-TNoXushmPOBAjJlthF5d2QwnX2xBPEtcNJr5XKNKbRLbDvBcOYkXlYDfvGfSA0zriwLFuCll5MDtNMAdZL17PQ==}
 
   empathic@2.0.0:
     resolution: {integrity: sha512-i6UzDscO/XfAcNYD75CfICkmfLedpyPDdozrLMmQc5ORaQcdMoc21OnlEylMIqI7U8eniKrPMxxtj8k0vhmJhA==}
@@ -1910,14 +1936,14 @@ packages:
     resolution: {integrity: sha512-P0efT1C9jIdVRefqjzOQ9Xml57zpOXnIuS+csaB4MdZbTdmGDLo8XhzBG1N7aO11gKDDkJvBLULeFTo46wwreA==}
     hasBin: true
 
-  msgpackr@1.11.8:
-    resolution: {integrity: sha512-bC4UGzHhVvgDNS7kn9tV8fAucIYUBuGojcaLiz7v+P63Lmtm0Xeji8B/8tYKddALXxJLpwIeBmUN3u64C4YkRA==}
+  msgpackr@1.12.1:
+    resolution: {integrity: sha512-4EUH9tQHnMmEgzW/MdAP0KIfa1T9AF+htl0ffe2n5vb2EKn9y2co8ccpgWko6S52Jy1PQZKwRnx5/KkYjtd9MQ==}
 
-  multiformats@9.9.0:
-    resolution: {integrity: sha512-HoMUjhH9T8DDBNT+6xzkrd9ga/XiBI4xLr58LJACwK6G3HTOPeMz4nB4KJs33L2BelrIJa7P0VuNaVF3hMYfjg==}
+  multiformats@13.4.2:
+    resolution: {integrity: sha512-eh6eHCrRi1+POZ3dA+Dq1C6jhP1GNtr9CRINMb67OKzqW9I5DUuZM/3jLPlzhgpGeiNUlEGEbkCYChXMCc/8DQ==}
 
-  multipasta@0.2.7:
-    resolution: {integrity: sha512-KPA58d68KgGil15oDqXjkUBEBYc00XvbPj5/X+dyzeo/lWm9Nc25pQRlf1D+gv4OpK7NM0J1odrbu9JNNGvynA==}
+  multipasta@0.2.8:
+    resolution: {integrity: sha512-ZPWuMKyv0cSO29f7hozp+k6+crZbQijV8ipMvxNxRf2SwtYGTX1ZX89Kd20VV4H9Znonx+EQn+iy1wGQsJ+b+Q==}
 
   nan@2.25.0:
     resolution: {integrity: sha512-0M90Ag7Xn5KMLLZ7zliPWP3rT90P6PN+IzVFS0VqmnPktBk3700xUVv8Ikm9EUaUE5SDWdp/BIxdENzVznpm1g==}
@@ -2116,9 +2142,6 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  uint8arrays@3.0.0:
-    resolution: {integrity: sha512-HRCx0q6O9Bfbp+HHSfQQKD7wU70+lydKVt4EghkdOvlK/NlrF90z+eXV34mUd48rNvVJXwkrMSPpCATkct8fJA==}
-
   unconfig-core@7.4.2:
     resolution: {integrity: sha512-VgPCvLWugINbXvMQDf8Jh0mlbvNjNC6eSUziHsBCMpxR05OPrNrvDnyatdMjRgcHaaNsCqz+wjNXxNw1kRLHUg==}
 
@@ -2191,39 +2214,46 @@ packages:
 
 snapshots:
 
-  '@algolia/cache-browser-local-storage@4.25.3':
+  '@algolia/cache-browser-local-storage@4.27.0':
     dependencies:
-      '@algolia/cache-common': 4.25.3
+      '@algolia/cache-common': 4.27.0
 
   '@algolia/cache-common@4.25.3': {}
 
-  '@algolia/cache-in-memory@4.25.3':
-    dependencies:
-      '@algolia/cache-common': 4.25.3
+  '@algolia/cache-common@4.27.0': {}
 
-  '@algolia/client-account@4.25.3':
+  '@algolia/cache-in-memory@4.27.0':
     dependencies:
-      '@algolia/client-common': 4.25.3
-      '@algolia/client-search': 4.25.3
-      '@algolia/transporter': 4.25.3
+      '@algolia/cache-common': 4.27.0
 
-  '@algolia/client-analytics@4.25.3':
+  '@algolia/client-account@4.27.0':
     dependencies:
-      '@algolia/client-common': 4.25.3
-      '@algolia/client-search': 4.25.3
-      '@algolia/requester-common': 4.25.3
-      '@algolia/transporter': 4.25.3
+      '@algolia/client-common': 4.27.0
+      '@algolia/client-search': 4.27.0
+      '@algolia/transporter': 4.27.0
+
+  '@algolia/client-analytics@4.27.0':
+    dependencies:
+      '@algolia/client-common': 4.27.0
+      '@algolia/client-search': 4.27.0
+      '@algolia/requester-common': 4.27.0
+      '@algolia/transporter': 4.27.0
 
   '@algolia/client-common@4.25.3':
     dependencies:
       '@algolia/requester-common': 4.25.3
       '@algolia/transporter': 4.25.3
 
-  '@algolia/client-personalization@4.25.3':
+  '@algolia/client-common@4.27.0':
     dependencies:
-      '@algolia/client-common': 4.25.3
-      '@algolia/requester-common': 4.25.3
-      '@algolia/transporter': 4.25.3
+      '@algolia/requester-common': 4.27.0
+      '@algolia/transporter': 4.27.0
+
+  '@algolia/client-personalization@4.27.0':
+    dependencies:
+      '@algolia/client-common': 4.27.0
+      '@algolia/requester-common': 4.27.0
+      '@algolia/transporter': 4.27.0
 
   '@algolia/client-search@4.25.3':
     dependencies:
@@ -2231,39 +2261,49 @@ snapshots:
       '@algolia/requester-common': 4.25.3
       '@algolia/transporter': 4.25.3
 
+  '@algolia/client-search@4.27.0':
+    dependencies:
+      '@algolia/client-common': 4.27.0
+      '@algolia/requester-common': 4.27.0
+      '@algolia/transporter': 4.27.0
+
   '@algolia/logger-common@4.25.3': {}
 
-  '@algolia/logger-console@4.25.3':
-    dependencies:
-      '@algolia/logger-common': 4.25.3
+  '@algolia/logger-common@4.27.0': {}
 
-  '@algolia/recommend@4.25.3':
+  '@algolia/logger-console@4.27.0':
     dependencies:
-      '@algolia/cache-browser-local-storage': 4.25.3
-      '@algolia/cache-common': 4.25.3
-      '@algolia/cache-in-memory': 4.25.3
-      '@algolia/client-common': 4.25.3
-      '@algolia/client-search': 4.25.3
-      '@algolia/logger-common': 4.25.3
-      '@algolia/logger-console': 4.25.3
-      '@algolia/requester-browser-xhr': 4.25.3
-      '@algolia/requester-common': 4.25.3
-      '@algolia/requester-node-http': 4.25.3
-      '@algolia/transporter': 4.25.3
+      '@algolia/logger-common': 4.27.0
 
-  '@algolia/requester-browser-xhr@4.25.3':
+  '@algolia/recommend@4.27.0':
     dependencies:
-      '@algolia/requester-common': 4.25.3
+      '@algolia/cache-browser-local-storage': 4.27.0
+      '@algolia/cache-common': 4.27.0
+      '@algolia/cache-in-memory': 4.27.0
+      '@algolia/client-common': 4.27.0
+      '@algolia/client-search': 4.27.0
+      '@algolia/logger-common': 4.27.0
+      '@algolia/logger-console': 4.27.0
+      '@algolia/requester-browser-xhr': 4.27.0
+      '@algolia/requester-common': 4.27.0
+      '@algolia/requester-node-http': 4.27.0
+      '@algolia/transporter': 4.27.0
+
+  '@algolia/requester-browser-xhr@4.27.0':
+    dependencies:
+      '@algolia/requester-common': 4.27.0
 
   '@algolia/requester-common@4.25.3': {}
 
-  '@algolia/requester-fetch@4.25.3':
-    dependencies:
-      '@algolia/requester-common': 4.25.3
+  '@algolia/requester-common@4.27.0': {}
 
-  '@algolia/requester-node-http@4.25.3':
+  '@algolia/requester-fetch@4.27.0':
     dependencies:
-      '@algolia/requester-common': 4.25.3
+      '@algolia/requester-common': 4.27.0
+
+  '@algolia/requester-node-http@4.27.0':
+    dependencies:
+      '@algolia/requester-common': 4.27.0
 
   '@algolia/transporter@4.25.3':
     dependencies:
@@ -2271,51 +2311,56 @@ snapshots:
       '@algolia/logger-common': 4.25.3
       '@algolia/requester-common': 4.25.3
 
-  '@atproto/api@0.18.18':
+  '@algolia/transporter@4.27.0':
     dependencies:
-      '@atproto/common-web': 0.4.14
-      '@atproto/lexicon': 0.6.1
-      '@atproto/syntax': 0.4.3
-      '@atproto/xrpc': 0.7.7
-      await-lock: 2.2.2
-      multiformats: 9.9.0
+      '@algolia/cache-common': 4.27.0
+      '@algolia/logger-common': 4.27.0
+      '@algolia/requester-common': 4.27.0
+
+  '@atproto/api@0.20.42':
+    dependencies:
+      '@atproto/common-web': 0.5.10
+      '@atproto/lexicon': 0.7.12
+      '@atproto/syntax': 0.7.5
+      '@atproto/xrpc': 0.8.11
+      await-lock: 3.0.0
+      multiformats: 13.4.2
       tlds: 1.261.0
       zod: 3.25.76
 
-  '@atproto/common-web@0.4.14':
+  '@atproto/common-web@0.5.10':
     dependencies:
-      '@atproto/lex-data': 0.0.9
-      '@atproto/lex-json': 0.0.9
-      '@atproto/syntax': 0.4.3
+      '@atproto/lex-data': 0.1.7
+      '@atproto/lex-json': 0.1.6
+      '@atproto/syntax': 0.7.5
       zod: 3.25.76
 
-  '@atproto/lex-data@0.0.9':
+  '@atproto/lex-data@0.1.7':
     dependencies:
-      multiformats: 9.9.0
+      multiformats: 13.4.2
       tslib: 2.8.1
-      uint8arrays: 3.0.0
       unicode-segmenter: 0.14.5
 
-  '@atproto/lex-json@0.0.9':
+  '@atproto/lex-json@0.1.6':
     dependencies:
-      '@atproto/lex-data': 0.0.9
+      '@atproto/lex-data': 0.1.7
       tslib: 2.8.1
 
-  '@atproto/lexicon@0.6.1':
+  '@atproto/lexicon@0.7.12':
     dependencies:
-      '@atproto/common-web': 0.4.14
-      '@atproto/syntax': 0.4.3
-      iso-datestring-validator: 2.2.2
-      multiformats: 9.9.0
+      '@atproto/common-web': 0.5.10
+      '@atproto/syntax': 0.7.5
+      multiformats: 13.4.2
       zod: 3.25.76
 
-  '@atproto/syntax@0.4.3':
+  '@atproto/syntax@0.7.5':
     dependencies:
+      iso-datestring-validator: 2.2.2
       tslib: 2.8.1
 
-  '@atproto/xrpc@0.7.7':
+  '@atproto/xrpc@0.8.11':
     dependencies:
-      '@atproto/lexicon': 0.6.1
+      '@atproto/lexicon': 0.7.12
       zod: 3.25.76
 
   '@babel/generator@7.28.6':
@@ -2425,45 +2470,45 @@ snapshots:
 
   '@drizzle-team/brocli@0.10.2': {}
 
-  '@effect/cluster@0.56.1(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/workflow@0.16.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(effect@3.19.15))(effect@3.19.15)':
+  '@effect/cluster@0.56.1(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/workflow@0.19.1(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(effect@3.22.1))(effect@3.22.1)':
     dependencies:
-      '@effect/platform': 0.94.2(effect@3.19.15)
-      '@effect/rpc': 0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15)
-      '@effect/sql': 0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15)
-      '@effect/workflow': 0.16.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(effect@3.19.15)
-      effect: 3.19.15
+      '@effect/platform': 0.97.1(effect@3.22.1)
+      '@effect/rpc': 0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1)
+      '@effect/sql': 0.49.0(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1)
+      '@effect/workflow': 0.19.1(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(effect@3.22.1)
+      effect: 3.22.1
       kubernetes-types: 1.30.0
 
-  '@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15)':
+  '@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1)':
     dependencies:
-      '@effect/platform': 0.94.2(effect@3.19.15)
-      effect: 3.19.15
+      '@effect/platform': 0.97.1(effect@3.22.1)
+      effect: 3.22.1
       uuid: 11.1.0
 
   '@effect/language-service@0.44.1': {}
 
-  '@effect/platform-node-shared@0.57.1(@effect/cluster@0.56.1(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/workflow@0.16.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(bufferutil@4.1.0)(effect@3.19.15)':
+  '@effect/platform-node-shared@0.61.1(@effect/cluster@0.56.1(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/workflow@0.19.1(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(bufferutil@4.1.0)(effect@3.22.1)':
     dependencies:
-      '@effect/cluster': 0.56.1(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/workflow@0.16.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(effect@3.19.15))(effect@3.19.15)
-      '@effect/platform': 0.94.2(effect@3.19.15)
-      '@effect/rpc': 0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15)
-      '@effect/sql': 0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15)
+      '@effect/cluster': 0.56.1(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/workflow@0.19.1(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(effect@3.22.1))(effect@3.22.1)
+      '@effect/platform': 0.97.1(effect@3.22.1)
+      '@effect/rpc': 0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1)
+      '@effect/sql': 0.49.0(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1)
       '@parcel/watcher': 2.5.6
-      effect: 3.19.15
-      multipasta: 0.2.7
+      effect: 3.22.1
+      multipasta: 0.2.8
       ws: 8.19.0(bufferutil@4.1.0)
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  '@effect/platform-node@0.104.1(@effect/cluster@0.56.1(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/workflow@0.16.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(bufferutil@4.1.0)(effect@3.19.15)':
+  '@effect/platform-node@0.108.1(@effect/cluster@0.56.1(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/workflow@0.19.1(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(bufferutil@4.1.0)(effect@3.22.1)':
     dependencies:
-      '@effect/cluster': 0.56.1(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/workflow@0.16.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(effect@3.19.15))(effect@3.19.15)
-      '@effect/platform': 0.94.2(effect@3.19.15)
-      '@effect/platform-node-shared': 0.57.1(@effect/cluster@0.56.1(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/workflow@0.16.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(bufferutil@4.1.0)(effect@3.19.15)
-      '@effect/rpc': 0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15)
-      '@effect/sql': 0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15)
-      effect: 3.19.15
+      '@effect/cluster': 0.56.1(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/workflow@0.19.1(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(effect@3.22.1))(effect@3.22.1)
+      '@effect/platform': 0.97.1(effect@3.22.1)
+      '@effect/platform-node-shared': 0.61.1(@effect/cluster@0.56.1(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/workflow@0.19.1(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(bufferutil@4.1.0)(effect@3.22.1)
+      '@effect/rpc': 0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1)
+      '@effect/sql': 0.49.0(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1)
+      effect: 3.22.1
       mime: 3.0.0
       undici: 7.19.2
       ws: 8.19.0(bufferutil@4.1.0)
@@ -2471,32 +2516,32 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@effect/platform@0.94.2(effect@3.19.15)':
+  '@effect/platform@0.97.1(effect@3.22.1)':
     dependencies:
-      effect: 3.19.15
+      effect: 3.22.1
       find-my-way-ts: 0.1.6
-      msgpackr: 1.11.8
-      multipasta: 0.2.7
+      msgpackr: 1.12.1
+      multipasta: 0.2.8
 
-  '@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15)':
+  '@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1)':
     dependencies:
-      '@effect/platform': 0.94.2(effect@3.19.15)
-      effect: 3.19.15
-      msgpackr: 1.11.8
+      '@effect/platform': 0.97.1(effect@3.22.1)
+      effect: 3.22.1
+      msgpackr: 1.12.1
 
-  '@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15)':
+  '@effect/sql@0.49.0(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1)':
     dependencies:
-      '@effect/experimental': 0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15)
-      '@effect/platform': 0.94.2(effect@3.19.15)
-      effect: 3.19.15
+      '@effect/experimental': 0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1)
+      '@effect/platform': 0.97.1(effect@3.22.1)
+      effect: 3.22.1
       uuid: 11.1.0
 
-  '@effect/workflow@0.16.0(@effect/experimental@0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(@effect/platform@0.94.2(effect@3.19.15))(@effect/rpc@0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15))(effect@3.19.15)':
+  '@effect/workflow@0.19.1(@effect/experimental@0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(@effect/platform@0.97.1(effect@3.22.1))(@effect/rpc@0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1))(effect@3.22.1)':
     dependencies:
-      '@effect/experimental': 0.58.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15)
-      '@effect/platform': 0.94.2(effect@3.19.15)
-      '@effect/rpc': 0.73.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15)
-      effect: 3.19.15
+      '@effect/experimental': 0.58.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1)
+      '@effect/platform': 0.97.1(effect@3.22.1)
+      '@effect/rpc': 0.73.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1)
+      effect: 3.22.1
 
   '@emnapi/core@1.8.1':
     dependencies:
@@ -3269,23 +3314,23 @@ snapshots:
     dependencies:
       humanize-ms: 1.2.1
 
-  algoliasearch@4.25.3:
+  algoliasearch@4.27.0:
     dependencies:
-      '@algolia/cache-browser-local-storage': 4.25.3
-      '@algolia/cache-common': 4.25.3
-      '@algolia/cache-in-memory': 4.25.3
-      '@algolia/client-account': 4.25.3
-      '@algolia/client-analytics': 4.25.3
-      '@algolia/client-common': 4.25.3
-      '@algolia/client-personalization': 4.25.3
-      '@algolia/client-search': 4.25.3
-      '@algolia/logger-common': 4.25.3
-      '@algolia/logger-console': 4.25.3
-      '@algolia/recommend': 4.25.3
-      '@algolia/requester-browser-xhr': 4.25.3
-      '@algolia/requester-common': 4.25.3
-      '@algolia/requester-node-http': 4.25.3
-      '@algolia/transporter': 4.25.3
+      '@algolia/cache-browser-local-storage': 4.27.0
+      '@algolia/cache-common': 4.27.0
+      '@algolia/cache-in-memory': 4.27.0
+      '@algolia/client-account': 4.27.0
+      '@algolia/client-analytics': 4.27.0
+      '@algolia/client-common': 4.27.0
+      '@algolia/client-personalization': 4.27.0
+      '@algolia/client-search': 4.27.0
+      '@algolia/logger-common': 4.27.0
+      '@algolia/logger-console': 4.27.0
+      '@algolia/recommend': 4.27.0
+      '@algolia/requester-browser-xhr': 4.27.0
+      '@algolia/requester-common': 4.27.0
+      '@algolia/requester-node-http': 4.27.0
+      '@algolia/transporter': 4.27.0
 
   ansi-regex@5.0.1: {}
 
@@ -3302,7 +3347,7 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  await-lock@2.2.2: {}
+  await-lock@3.0.0: {}
 
   before-after-hook@4.0.0: {}
 
@@ -3358,11 +3403,11 @@ snapshots:
 
   detect-libc@2.1.2: {}
 
-  dfx@0.127.0(@effect/platform@0.94.2(effect@3.19.15))(effect@3.19.15):
+  dfx@0.127.0(@effect/platform@0.97.1(effect@3.22.1))(effect@3.22.1):
     dependencies:
-      '@effect/platform': 0.94.2(effect@3.19.15)
+      '@effect/platform': 0.97.1(effect@3.22.1)
       discord-api-types: 0.38.37
-      effect: 3.19.15
+      effect: 3.22.1
     optionalDependencies:
       discord-verify: 1.2.0
 
@@ -3417,7 +3462,7 @@ snapshots:
       es-errors: 1.3.0
       gopd: 1.2.0
 
-  effect@3.19.15:
+  effect@3.22.1:
     dependencies:
       '@standard-schema/spec': 1.1.0
       fast-check: 3.23.2
@@ -3713,13 +3758,13 @@ snapshots:
       '@msgpackr-extract/msgpackr-extract-win32-x64': 3.0.3
     optional: true
 
-  msgpackr@1.11.8:
+  msgpackr@1.12.1:
     optionalDependencies:
       msgpackr-extract: 3.0.3
 
-  multiformats@9.9.0: {}
+  multiformats@13.4.2: {}
 
-  multipasta@0.2.7: {}
+  multipasta@0.2.8: {}
 
   nan@2.25.0: {}
 
@@ -3907,10 +3952,6 @@ snapshots:
       fsevents: 2.3.3
 
   typescript@5.9.3: {}
-
-  uint8arrays@3.0.0:
-    dependencies:
-      multiformats: 9.9.0
 
   unconfig-core@7.4.2:
     dependencies:
